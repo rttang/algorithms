@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1505288646 source:c:\users\mzh\desktop\ctest\set\list.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+
+1505288701 c:\users\mzh\desktop\ctest\set\list.h
+
+1506267555 source:c:\users\mzh\desktop\ctest\set\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+	"set.h"
+
+1506267623 source:c:\users\mzh\desktop\ctest\set\set.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+	"set.h"
+
+1506257090 c:\users\mzh\desktop\ctest\set\set.h
+	<stdlib.h>
+	"list.h"
+
+1505288646 source:c:\users\dell\desktop\c\set\list.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+
+1505288701 c:\users\dell\desktop\c\set\list.h
+
+1506267623 source:c:\users\dell\desktop\c\set\set.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+	"set.h"
+
+1506257090 c:\users\dell\desktop\c\set\set.h
+	<stdlib.h>
+	"list.h"
+
+1506952779 source:c:\users\dell\desktop\c\set\main.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+	"set.h"
+

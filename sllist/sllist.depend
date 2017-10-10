@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1505315648 source:c:\users\administrator\desktop\study code\c\sllist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1505288646 source:c:\users\administrator\desktop\study code\c\sllist\list.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+
+1505288701 c:\users\administrator\desktop\study code\c\sllist\list.h
+
+1505288646 source:c:\users\mzh\desktop\ctest\sllist\list.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+
+1505288701 c:\users\mzh\desktop\ctest\sllist\list.h
+
+1446667744 source:c:\users\mzh\desktop\ctest\sllist\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1505291994 source:c:\users\mzh\desktop\ctest\sllist\stack.c
+	<stdlib.h>
+	"list.h"
+	"stack.h"
+
+1505291028 c:\users\mzh\desktop\ctest\sllist\stack.h
+	<stdlib.h>
+	"list.h"
+
+1505291028 c:\users\administrator\desktop\study code\c\sllist\stack.h
+	<stdlib.h>
+	"list.h"
+
+1505291994 source:c:\users\administrator\desktop\study code\c\sllist\stack.c
+	<stdlib.h>
+	"list.h"
+	"stack.h"
+
+1505369800 source:c:\users\administrator\desktop\study code\c\sllist\queue.c
+	<stdlib.h>
+	"list.h"
+	"queue.h"
+
+1505369213 c:\users\administrator\desktop\study code\c\sllist\queue.h
+	<stdlib.h>
+	"list.h"
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1505202690 source:c:\users\administrator\desktop\study code\c\clist\main.c
+	<string.h>
+	<stdlib.h>
+	"clist.h"
+
+1505202742 c:\users\administrator\desktop\study code\c\clist\clist.h
+	<stdlib.h>
+

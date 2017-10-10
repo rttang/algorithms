@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1506669915 source:c:\users\dell\desktop\c\graph\graph.c
+	"graph.h"
+	"list.h"
+	"set.h"
+
+1506906865 c:\users\dell\desktop\c\graph\graph.h
+	<stdlib.h>
+	"list.h"
+	"set.h"
+
+1505288701 c:\users\dell\desktop\c\graph\list.h
+
+1506257090 c:\users\dell\desktop\c\graph\set.h
+	<stdlib.h>
+	"list.h"
+
+1505288646 source:c:\users\dell\desktop\c\graph\list.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+
+1507038883 source:c:\users\dell\desktop\c\graph\main.c
+	<stdio.h>
+	<stdlib.h>
+	"graph.h"
+	"list.h"
+	"dfs.h"
+
+1506267623 source:c:\users\dell\desktop\c\graph\set.c
+	<stdlib.h>
+	<string.h>
+	"list.h"
+	"set.h"
+
+1506961651 source:c:\users\dell\desktop\c\graph\bfs.c
+	<stdlib.h>
+	"bfs.h"
+	"graph.h"
+	"list.h"
+	"queue.h"
+
+1506961661 c:\users\dell\desktop\c\graph\bfs.h
+	"graph.h"
+	"list.h"
+
+1505369213 c:\users\dell\desktop\c\graph\queue.h
+	<stdlib.h>
+	"list.h"
+
+1505369800 source:c:\users\dell\desktop\c\graph\queue.c
+	<stdlib.h>
+	"list.h"
+	"queue.h"
+
+1507038959 source:c:\users\dell\desktop\c\graph\dfs.c
+	<stdio.h>
+	"dfs.h"
+	"graph.h"
+	"list.h"
+
+1507038970 c:\users\dell\desktop\c\graph\dfs.h
+	"graph.h"
+	"list.h"
+
