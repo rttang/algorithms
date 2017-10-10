@@ -1,5 +1,5 @@
-#ifndef "BITREE_H"
-#define "BITREE_H"
+#ifndef BITREE_H
+#define BITREE_H
 #include <stdlib.h>
 
 typedef struct BiTreeNode_
@@ -17,7 +17,7 @@ typedef struct BiTree_
 }BiTree;
 
 void bitree_init(BiTree *tree,void (*destroy)(void *data));
-void bitree_destroy(Bitree *tree);
+void bitree_destroy(BiTree *tree);
 int bitree_ins_left(BiTree *tree,BiTreeNode *node,const void *data);
 int bitree_ins_right(BiTree *tree,BiTreeNode *node,const void *data);
 void bitree_rem_left(BiTree *tree,BiTreeNode *node);

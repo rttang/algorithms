@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         *使用欧几里得算法实现gcd(m,n)
+         *input:m,n为不全为零的非负整数
+         *output:m,n最大公约数
+         */
+        function Euclid(m, n) {
+            var r = 0;
+            while (n != 0) {
+                r = m % n;
+                m = n;
+                n = r;
+            }
+            return m;
+        }
+        //Euclid的优化版，最大公约数必然不大于min(m,n)
+        function Euclid2(m, n) {
+            var min = n;
+            if (m < n) min = m;
+            while (min != 0) {
+                if (m % min != 0) min--;
+                else if (n % min != 0) min--;
+                else return min;
+            }
+            return min;
+        }
+        //console.log(Euclid2(61,24))
+        /*
+         *使用牛顿迭代法实现手动开方，方程式为g(x)=(x+a/x)/2其中a为要开方的数
+         *input:n,不为零非负整数
+         *output:res,n开方后的结果
+         */
+        function Sqrt(n) {
+            var division = 1;
+            var res = division;
+            var percision = 0.000001;
+            do {
+                division = res;
+                res = (division + n / division) / 2;
+                console.log(division, res)
+            } while (Math.abs(res - division) >= percision) //取绝对值很重要
+            return res;
+        }
+        console.log(Sqrt(2));
+
+        function Sieve(n) {
+            var A = [];
+            var j;
+            for (var p = 2; p < n; p++) {
+                A[p] = p;
+            }
+            for (var p = 2; p < Math.floor(Sqrt(n)); p++) {
+                if (A[p] != 0) {
+                    j = p * p;
+                    while (j <= n) {
+                        A[j] = 0;
+                        j = j + p;
+                    }
+
+                }
+
+            }
+            var i = 0;
+            var L = [];
+            for (var p = 2; p < n; p++) {
+                if (A[p] != 0) {
+                    L[i] = A[p];
+                    i = i + 1;
+                }
+            }
+            return L;
+        }
+      function  compare(a,b){
+        var _a={},_b={},_c={},key;
+        for(var i=0;i<a.length;i++){
+           key = a[i];
+           if(_a[key]) _a[key] +=_a[key];
+           else _a[key]=1;
+        }
+        for(var i=0;i<b.length;i++){
+           key =b[i];
+           if(_b[key]) _b[key] +=_b[key];
+           else _b[key]=1;
+        }
+        for(var _key in _a){
+            if(_b[_key]){
+                _c[_key]=_a[_key];
+                if(_b[_key]<_a[_key])  _c[_key]=_b[_key];
+            }
+        }
+        return _c;
+      }
+      console.log(compare([2,5,5,5],[2,2,3,5,5,7]))
+        // console.log(Sieve(24));
+    </script>
+</body>
+
+</html>
