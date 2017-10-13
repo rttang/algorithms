@@ -11,7 +11,7 @@ typedef struct BiTreeNode_
 typedef struct BiTree_
 {
     int size;
-    int (*compare)(const void *key1,const void *key2);
+    int (*compare)(const void *key1,const void *key2);//大于返回1，小于返回-1,等于返回0
     void (*destroy)(void *data);
     BiTreeNode *root;
 }BiTree;
@@ -23,6 +23,8 @@ int bitree_ins_right(BiTree *tree,BiTreeNode *node,const void *data);
 void bitree_rem_left(BiTree *tree,BiTreeNode *node);
 void bitree_rem_right(BiTree *tree,BiTreeNode *node);
 int bitree_merge(BiTree *merge,BiTree *left,BiTree *right,const void *data);
+BiTreeNode *bitree_search_inside(const void *data,BiTreeNode *node,BiTree *tree);
+int bitree_search(BiTree *tree,const void *data,BiTreeNode **backNode);
 
 #define bitree_size(tree) ((tree)->size)
 #define bitree_root(tree) ((tree)->root)

@@ -134,3 +134,23 @@ int bitree_merge(BiTree *merge,BiTree *left,BiTree *right,const void *data)
     right->size=0;
     return 0 ;
 }
+int bitree_search(BiTree *tree,const void *data,BiTreeNode **backNode)
+{
+    BiTreeNode *node;
+    if(bitree_size(tree)==0)
+        return -1;
+    node = bitree_root(tree);
+    if(tree->compare(data,(int*)bitree_data(node))==0) return 1;
+    if(tree->compare(data,(int*)bitree_data(node))==-1)
+        *backNode = bitree_search_inside(data,bitree_left(node),tree);
+    else *backNode = bitree_search_inside(data,bitree_right(node),tree);
+    return 0;
+
+}
+BiTreeNode *bitree_search_inside(const void *data,BiTreeNode *node,BiTree *tree)
+{
+    if(node == NULL || tree->compare(data,(int*)bitree_data(node))==0) return node;
+    if(tree->compare(data,(int*)bitree_data(node))==-1)
+         bitree_search_inside(data,bitree_left(node),tree);
+    else  bitree_search_inside(data,bitree_right(node),tree);
+}

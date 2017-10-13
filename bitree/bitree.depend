@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1507685828 source:c:\users\administrator\algorithms\bitree\bitree.c
+	<stdlib.h>
+	<string.h>
+	"bitree.h"
+
+1507685828 c:\users\administrator\algorithms\bitree\bitree.h
+	<stdlib.h>
+
+1446667744 source:c:\users\administrator\algorithms\bitree\main.c
+	<stdio.h>
+	<stdlib.h>
+
