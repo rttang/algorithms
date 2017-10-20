@@ -154,3 +154,9 @@ BiTreeNode *bitree_search_inside(const void *data,BiTreeNode *node,BiTree *tree)
          bitree_search_inside(data,bitree_left(node),tree);
     else  bitree_search_inside(data,bitree_right(node),tree);
 }
+int compare(int *data1,int *data2)
+{
+    if(*data1==*data2)return 0;
+    else if(*data1>*data2) return 1;
+    else return -1;
+}

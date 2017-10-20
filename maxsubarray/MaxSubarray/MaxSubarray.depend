@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1508402634 source:c:\users\administrator\algorithms\maxsubarray\maxsubarray\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -25,6 +25,7 @@ void bitree_rem_right(BiTree *tree,BiTreeNode *node);
 int bitree_merge(BiTree *merge,BiTree *left,BiTree *right,const void *data);
 BiTreeNode *bitree_search_inside(const void *data,BiTreeNode *node,BiTree *tree);
 int bitree_search(BiTree *tree,const void *data,BiTreeNode **backNode);
+int compare(int *data1,int *data2);
 
 #define bitree_size(tree) ((tree)->size)
 #define bitree_root(tree) ((tree)->root)
